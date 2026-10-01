@@ -1,0 +1,10 @@
+#####4번째
+
+N = int(input())
+Ist = []
+
+for i in range(N):
+  temp = int(input())
+  Ist.append(temp)
+  
+print(int(sum(Ist)/N))
