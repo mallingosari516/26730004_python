@@ -1,0 +1,11 @@
+#####리스트 연산문제 6번
+Ist = []
+
+while True:
+  n = int(input())
+  if n == 0:
+    break
+  Ist.append(n)
+
+for i in Ist:
+  print(i)
