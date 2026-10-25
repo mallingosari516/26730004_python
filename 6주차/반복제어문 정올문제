@@ -1,0 +1,7 @@
+#반복제어문3 - 자가진단 5-1
+a, b = input().split()
+start, end = ord(a), ord(b)
+if start <= end:
+    print(*(chr(i) for i in range(start, end + 1)))
+else:
+    print(*(chr(i) for i in range(start, end - 1, -1)))
