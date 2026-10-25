@@ -1,0 +1,46 @@
+#1.  리스트1 자가진단 5
+n = int(input())
+
+my_list = []
+
+for _ in range(n):
+    num = int(input())
+    my_list.append(num)
+
+print(my_list)
+
+
+#2. 리스트1 연습문제 6
+list = []
+
+while True:
+    num = int(input())
+    if num == 0:
+        break
+    list.append(num)
+
+ 
+for item in list:
+    print(item)
+
+
+#3. 리스트1 자가진단 7
+num = []
+while True:
+    n = int(input())
+    if n == 0:
+        break
+    num.append(n)
+
+print(*(num[1::2]))
+
+
+#4. 리스트1 형성평가 4
+n = int(input())
+num = [int(input()) for _ in range(n)]
+print(sum(num) // n)
+
+
+#5. 리스트2 연습문제 4
+s = [int(x) for x in input().split()]
+print(max(s))
