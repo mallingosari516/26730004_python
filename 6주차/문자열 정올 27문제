@@ -1,0 +1,176 @@
+#1. 문자열 - 연습문제 1
+a = input()
+for i in range(len(a)):
+    print(a[i], end=" ")
+print()
+
+
+#2. 문자열 - 자가진단 1-1
+a = input()
+print(*a[::2])
+
+
+#3. 문자열 - 자가진단 1-2
+s = input()
+print(s[::-1])
+
+
+#4. 문자열 - 연습문제 2
+print("It's an apple.")
+print('He said "Hello!" to me')
+
+
+#5. 문자열 - 자가진단 2
+str1 = 'My name is "Hong Gildong"'
+str2 = "I'm 15 years old"
+
+print(str1)
+print(str2)
+
+
+#6. 문자열 - 연습문제 3
+A = "apple orange banana"
+print(" ".join(reversed(A.split())))
+
+B = "   Hello world!   "
+print(B)
+print(B.strip())
+
+
+#7. 문자열 - 자가진단 3
+a, b = input().split()
+print(b, a + b)
+
+
+#8. 문자열 - 연습문제 4
+name = input()
+age = input()
+print(f"{name} is {age} years old.")
+
+
+#9. 문자열 - 자가진단 4
+A,B = input().split()
+C,D = input().split()
+B = int(B)
+
+print(A + "'s age -", C + "'s age =", int(B) - int(D))
+
+
+#10. 문자열 - 연습문제 5
+PI = 3.14
+r = int(input())
+area = r * r * PI
+
+print(f"PI = {PI:.2f}")
+print(f"Area = {r} * {r} * {PI} = {area:.1f}")
+
+
+#11. 문자열 - 자가진단 5
+n = int(input())
+result = n / 3
+print(f"{result:.2f}")
+
+
+#12. 문자열 - 연습문제 6
+print(" ITEM PRICE")
+print(" shoe    75")
+print("  bag   230")
+
+
+#13. 문자열 - 자가진단 6
+print(f"{'item':>10}{'count':>10}{'price':>10}{'rate':>10}")
+print(f"{'pen':>10}{20:>10}{100:>10}{50.5:>10}")
+print(f"{'note':>10}{5:>10}{95:>10}{35.3:>10}")
+print(f"{'eraser':>10}{110:>10}{97:>10}{14.2:>10}")
+
+
+#14. 문자열 - 연습문제 7
+h = int(input())
+m = int(input())
+print(f"{h:02d}:{m:02d}")
+
+
+#15. 문자열 - 자가진단 7
+h, m = map(int, input().split())
+
+period = "PM" if h >= 12 else "AM"
+if h >= 13:
+    h -= 12
+
+print(f"{h:02d} : {m:02d} {period}")
+
+
+#16. 문자열 - 연습문제 8
+s = input()
+print(",".join(s))
+
+
+#17. 문자열 - 자가진단 8-1
+a = input()
+b = input()
+c = input()
+print(f"{a}-{b}-{c}")
+
+
+#18. 문자열 - 자가진단 8-2
+y, m, d = input().split()
+print(f"{y}/{m}/{d}")
+
+
+#19. 문자열 - 연습문제 9
+a, b = input().split()
+s = a * 3
+if b in s:
+    print(a + b)
+else:
+    print(b * 2)
+
+
+#20. 문자열 - 자가진단 9
+password = input()
+pattern = input()
+if password in pattern * 5:
+    print('YES')
+else:
+    print('NO')
+
+
+#21. 문자열 - 형성평가 1
+s = input()
+print("-".join(s[::-1]))
+
+
+#22. 문자열 - 형성평가 2
+name = input()
+print(f"{name}'s score 'perfect'")
+
+
+#23. 문자열 - 형성평가 3
+base = float(input())
+height = float(input())
+area = (base * height) / 2
+print(f"{area:.1f}")
+
+
+#24. 문자열 - 형성평가 4
+print(f"{'name':>10}{'subject':>10}")
+print(f"{'minsoo':>10}{'math':>10}")
+print(f"{'chulsoo':>10}{'science':>10}")'
+
+
+#25. 문자열 - 형성평가 5
+name, height, weight = input().split()
+print(f"NAME: {name}")
+print(f"HEIGHT: {height}cm")
+print(f"WEIGHT: {float(weight):.2f}kg")
+
+
+#26. 문자열 - 형성평가 6
+s = input()
+print(".".join(s))
+
+
+#27. 문자열 - 형성평가 7
+s = input()
+print(s[::-1])
+print(s)
